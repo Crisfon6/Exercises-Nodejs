@@ -1,0 +1,14 @@
+npm install --save-dev @babel/core @babel/cli @babel/preset-env
+
+npm install --save @babel/polyfill
+npm install --save-dev@babel/node
+
+"build": "babel src/index.js --out-file script-compiled.js"
+
+////////////////////
+npm install --save-dev @babel/core
+npm install @babel/preset-env --save-dev
+{
+  "presets": ["@babel/preset-env"]
+}
+"build": "babel src --out-dir dist"
